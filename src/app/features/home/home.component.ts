@@ -1,11 +1,12 @@
 import { Component } from "@angular/core";
 import { ButtonModule } from "primeng/button";
+import { SummaryComponent } from "../summary/summary.component";
 
 @Component({
-   selector: "app-home",
-   standalone: true,
-   imports: [ButtonModule],
-   templateUrl: "./home.component.html",
-   styleUrl: "./home.component.scss",
+    selector: "h-home",
+    standalone: true,
+    templateUrl: "./home.component.html",
+    styleUrl: "./home.component.scss",
+    imports: [ButtonModule, SummaryComponent]
 })
 export class HomeComponent {}

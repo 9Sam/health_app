@@ -1,0 +1,35 @@
+<div class="card-container p-4 md:p-4">
+   <div class="border rounded-lg">
+      <div class="flex p-4 border">
+         <div class="w-1/3 flex flex-col justify-center items-center">
+            <h-summary-counter text="Consumidas"></h-summary-counter>
+         </div>
+         <div class="relative flex flex-col justify-center items-center w-1/3">
+            <span>Calories</span>
+
+            <circle-progress
+               #circleProgress
+               [percent]="90"
+               [title]="'1823'"
+               [titleFontSize]="'20'"
+               [subtitle]="''"
+               [subtitleFontSize]="'0'"
+               [showUnits]="false"
+               [radius]="50"
+               [outerStrokeWidth]="6"
+               [innerStrokeWidth]="0"
+               [outerStrokeColor]="'#30A2FF'"
+               [innerStrokeColor]="'#00C4FF'"
+               [animation]="true"
+               [animationDuration]="300"
+            ></circle-progress>
+            <span class="absolute top-[90px] text-gray-300 text-[14px]"
+               >restantes</span
+            >
+         </div>
+         <div class="w-1/3 flex flex-col justify-center items-center">
+            <h-summary-counter text="Quemadas"></h-summary-counter>
+         </div>
+      </div>
+   </div>
+</div>
