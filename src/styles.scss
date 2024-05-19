@@ -1,7 +1,32 @@
-@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/themes/aura-light-lime/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
 
+$light-gray: #e6e6e6;
+
+h1, h2, h3{
+   padding: 0;
+   margin: 0;
+}
+
+.h-border{
+   border: 2px;
+   border-radius: 10px;
+   border-color: $light-gray;
+   border-style: solid;
+}
+
+:host ::ng-deep {
+   .p-button-icon-only {
+      font-size: 30px !important;
+   }
+   
+   .p-tooltip{
+      padding: 10px !important;
+   }
+
+}

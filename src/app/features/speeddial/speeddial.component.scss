@@ -1,0 +1,23 @@
+:host ::ng-deep {
+   .speeddial-tooltip {
+       .p-speeddial-direction-up {
+           &.speeddial-left {
+               left: 0;
+               bottom: 0;
+               padding: 16px;
+           }
+
+           &.speeddial-right {
+               right: 0;
+               bottom: 0;
+           }
+       }
+   }
+
+   .p-speeddial-list{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+   }
+}

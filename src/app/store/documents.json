@@ -1,0 +1,91 @@
+{
+   "l:settings": {
+      "defaultWeightMeasure": "kg | lbs",
+      "defaultWaterGlassMeasure": "ml | l",
+      "defaultWaterGlass": 0.25,
+      "actualWeight": 0,
+      "targetWeight": 0,
+      "bodyMeassures": {
+         "left arm": 0,
+         "right arm": 0,
+         "left forearm": 0,
+         "right forearm": 0,
+         "left leg": 0,
+         "right leg": 0,
+         "neck": 0,
+         "glutes": 0,
+         "waist": 0,
+         "chest": 0,
+         "abs": 0,
+         "shoulder": 0,
+         "left calf": 0,
+         "right calf": 0
+      }
+   },
+   "d:food": [
+      {
+         "id": "1",
+         "icon": "mdi:food",
+         "name": "Food",
+         "description": "Food",
+         "category": "",
+         "properties": {
+            "amount": 0,
+            "calories": 0,
+            "proteins": 0,
+            "carbs": 0,
+            "sugars": 0,
+            "fats": 0
+         }
+      }
+   ],
+   "d:meal": {
+      "id": "1",
+      "icon": "mdi:food",
+      "name": "Meal",
+      "description": "Meal",
+      "foods": [
+         {
+            "id": "1",
+            "amount": 0,
+            "quantity": 0,
+            "propertiesAmount": "{properties}"
+         },
+         {
+            "id": "2",
+            "amount": 0,
+            "quantity": 2,
+            "propertiesAmount": "{properties}"
+         }
+      ]
+   },
+   "activity": {
+      "icon": "mdi:walk",
+      "name": "walk",
+      "description": "walk",
+      "caloriesPerMinute": 0
+   },
+   "day": {
+      "date": "2022-09-21",
+      "meals": [
+         {
+            "id": "1",
+            "type": "breakfast | lunch | dinner | snack",
+            "consumedCalories": 0,
+            "targetCalories": 0,
+            "(note)": "one registry per meal"
+         }
+      ],
+      "activities": [
+         {
+            "icon": "mdi:walk",
+            "name": "walk",
+            "calories": 0,
+            "duration": 0,
+            "note": ""
+         }
+      ],
+      "waterGlass": 0,
+      "notes": []
+   }
+}

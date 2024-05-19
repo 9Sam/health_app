@@ -1,20 +1,16 @@
 <div class="">
    <div></div>
    @for (meal of meals; track $index){
-   <div class="flex border rounded-lg p-4 mb-2">
-      <div class="w-1/5">
+   <div class="flex h-border p-4 mb-2">
+      <div class="w-1/5 my-auto">
          <h-mdw-food-progress-preview [image]="meal.image"></h-mdw-food-progress-preview>
       </div>
       <div class="w-3/5 flex-row my-auto justify-start ps-4">
-         <h2>{{meal.name}}</h2>
+         <h2 class="text-md">{{meal.name}}</h2>
          <span class="text-gray-500 text-[12px]">{{meal.actualCalories}} / {{meal.requiredCalories}}</span>
       </div>
       <div class="w-1/5 flex justify-end items-center align-middle">
-         <button
-            class="flex justify-center items-center rounded-full w-8 h-8 bg-blue-500"
-         >
-            <span class="text-white text-[25px]">+</span>
-         </button>
+         <p-button icon="pi pi-plus" [rounded]="true" />
       </div>
    </div>
    }
